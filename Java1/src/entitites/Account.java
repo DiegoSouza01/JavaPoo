@@ -1,6 +1,6 @@
-package ConstrutoresThisSobrecargaEncapsulamento;
+package entitites;
 
-public class Fixação {
+public class Account {
     /*
     Em um banco, para se cadastrar uma conta bancária, é necessário informar o número da conta, o nome do
 titular da conta, e o valor de depósito inicial que o titular depositou ao abrir a conta. Este valor de depósito
@@ -34,4 +34,47 @@ Enter a withdraw value: 300.00
 Updated account data:
 Account 8532, Holder: Alex Green, Balance: $ 395.00
      */
+
+    private int number;
+    private String holder;
+    private double balance;
+
+    public Account(int number, String holder) {
+        this.number = number;
+        this.holder = holder;
+    }
+
+    public Account(int number, double initialDeposit, String holder) {
+        this.number = number;
+        deposit(initialDeposit);
+        this.holder = holder;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public String getHolder() {
+        return holder;
+    }
+
+    public void setHolder(String holder) {
+        this.holder = holder;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public void withdraw ( double amount) {
+        balance -= amount + 5.0;
+    }
+
+    public String toString() {
+        return "Account " + number + ", Holder: " + holder + ", Balance: $ " + String.format("%.2f", balance);
+    }
 }

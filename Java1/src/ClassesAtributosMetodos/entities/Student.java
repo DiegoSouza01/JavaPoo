@@ -1,4 +1,4 @@
-package ClassesAtributosMetodos;
+package ClassesAtributosMetodos.entities;
 
 public class Student {
     /*

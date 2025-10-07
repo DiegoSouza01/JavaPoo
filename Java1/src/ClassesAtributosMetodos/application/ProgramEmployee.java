@@ -1,4 +1,6 @@
-package ClassesAtributosMetodos;
+package ClassesAtributosMetodos.application;
+
+import ClassesAtributosMetodos.entities.Employee;
 
 import java.util.Locale;
 import java.util.Scanner;

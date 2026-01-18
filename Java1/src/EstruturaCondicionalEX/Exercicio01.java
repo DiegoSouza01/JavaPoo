@@ -15,8 +15,11 @@ public class Exercicio01 {
         if (N < 0) {
             System.out.println("NEGATIVO");
         }
-        else {
+        else if (N > 0) {
             System.out.println("NAO NEGATIVO");
+        } else {
+            System.out.println("ZERO owo");
+
         }
 
         sc.close();

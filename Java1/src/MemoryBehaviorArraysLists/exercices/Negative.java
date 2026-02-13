@@ -14,10 +14,8 @@ public class Negative {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int n;
-
         System.out.print("Quantos numeros voce vai digitar? ");
-        n = sc.nextInt();
+        int n = sc.nextInt();
 
         int[] vetor = new int[n];
 
